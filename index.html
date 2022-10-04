@@ -9,27 +9,37 @@
         <base target="_blank">
     </head>
     <body>
-        <div class="container">
+        <div class="container" style="text-align: center;">
             <div class="row">
                 <div class="navbar">          
-                    <div class="col" style="text-align: center;">
-                        <p><a href="https://trello.com/b/a57JNAwX/project">#Home</a> <a href="https://trello.com/b/a57JNAwX/project">#News</a> <a href="https://trello.com/b/a57JNAwX/project">#Contact</a></p>
+                    <div class="col">
+                        <p><a href="https://trello.com/b/a57JNAwX/project">#Home</a></p>
                     </div>
                 </div>
             </div>
-            <h1 style="text-align: center;"> Laboratorijas trauki un piederumi </h1> <br>
-            <div class="row" style="text-align: center;">
-                <div class="col-4">
-                    <p>bigman</p>
+            <h1> Laboratorijas trauki un piederumi </h1> <br>
+            <div class="row">
+                <div class="col-3">
+                    <button id="img1" onclick="showPage()" ><img src="https://www.siic.lu.lv/kim/IT/K_12/info_kim/images/pic1.jpg"> </button>
                 </div>
-                <div class="col-4">
-                    <p>Dienā jāēd 200 g prokis</p>
+                <div class="col-3">
                 </div>
-                <div class="col-4">
-                    <p>Dienā jāēd 200 g prokis</p>
+                <div class="col-3">
+                </div>
+                <div class="col-3">
                 </div>
             </div>
         </div> 
+
+        <script type="text/javascript">
+            document.getElementById("img1").onclick = function () {
+                location.href = "https://trello.com/c/T9MmBjqM/12-atrast-%C4%B7%C4%ABmijas-traukus";
+            };
+
+            function showPage() {
+                alert('Hello World!');
+            }
+        </script>
     </body>
 </html>
 
