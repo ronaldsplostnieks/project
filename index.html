@@ -7,22 +7,33 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> 
         <link rel="stylesheet" href="style.css">
         <base target="_blank">
+        <script type="text/javascript">
+            function showPage(numurs) {
+                document.getElementById("teksts").innerHTML = names[numurs];
+                document.getElementById("description").innerHTML = saturs[numurs];
+                var c = "pictures/pic"+numurs+".jpg";
+                document.getElementById("bilde").src = c;
+            }
+            const saturs = ["Aizsargbrilles lieto acu aizsargāšanai, veicot ķīmijas eksperimentus.", " Izmanto šķidrumu un vārīšanai un karsēšanai, organisko un neorganisko sintēžu veikšanai, destilēšanai.", "Izmanto tādu šķidrumu atdalīšanai, kuri savstarpēji nesajaucas (piemēram, eļļa un ūdens).","Izmanto kopā ar Bunzena kolbu (vakuumkolbu) vielu ātrai filtrēšanai.","Tā ir graduēta stikla caurule ar krānu, kas paredzēta tilpumanalīzei un precīzai šķīduma tilpuma mērīšanai.","Izmanto kopā ar Bihnera piltuvi vielu filtrēšanai. Tā ir biezsienu stikla kolba, kuras novaduli ar gumijas vakuumcauruli pievieno vakuumsūknim. Šī ierīce nav paredzēta karsēšanai uz sildierīces.","Lieto dažāda veida ierīču un iekārtu iestiprināšanai.","Izmanto viendabīgu maisījumu sadalīšanai, vielu attīrīšanai.","Tas ir biezsienu stikla trauks, kas noslēdzams ar labi pieguļošu vāku. Eksikatoru izmanto vielu lēnai žāvēšanai vai higroskopisku vielu uzglabāšanai. Mitruma uzsūkšanai izmanto CaCl2, H2SO4, MgSO4, P2O5.","Izmanto karsēšanai.","Izmanto sāļu ūdensšķīdumu elektrolīzei.","Izmanto šķīdumu pagatavošanai, vārīšanai, šķīdumu un vielu uzglabāšanai, ķīmisko iekārtu sastādīšanai.","Izmanto neviendabīgu maisījumu sadalīšanai.","Iekārta amonjaka iegūšanai un uzkrāšanai.","Iekārta etēna vai skābekļa iegūšanai un uzkrāšanai.","Iekārta hlora vai oglekļa iegūšanai un uzkrāšanai.","Iekārta HCl vai hlora ūdensšķīduma iegūšanai.","Izmanto ūdens sadalīšanai ar līdzstrāvu.","Izmanto ķīmisko vielu pārbēršanai.","Lieto gāzu iegūšanai (H2, CO2, H2S, u.c.)","Kristalizators ir stikla bļoda ar biezām sienām. To izmanto vielu pārkristalizēšanai vai arī kā pneimatiskās vannas. Tas nav paredzēts karsēšanai.","Izmanto destilācijas iekārtā, lai kondensētu atdestilētās vielas tvaikus.","Mēģene ir vienkāršākais laboratorijas stikla trauks, ko izmanto eksperimentos ar nelieliem vielu daudzumiem. Mēģenes lieto ķīmijā, bioloģijā un medicīnā. Speciālām vajadzībām izmanto graduētas mēģenes ar noteiktu tilpumu.","Izmanto mēģeņu ievietošanai eksperimenta laikā.","Izmanto karsējot mēģenes.","Izmanto šķīdumu (šķidrumu) tilpuma mērīšanai.","Lieto precīzas koncentrācijas (molāras koncentrācijas) šķīdumu pagatavošanai. Lieto precīzai šķīdumu (šķidrumu) tilpuma mērīšanai.","Mērpipete ir graduēta pipete, kuru izmanto precīzu šķīduma tilpumu mērīšanai.","Lieto precīzu šķīdumu tilpumu nomērīšanai.","Lieto vielu sasmalcināšanai. Laboratorijā sastopamas porcelāna, tērauda, ahāta vai arī misiņa piestas.","Paredzētas šķidrumu (šķīdumu) ievadīšanai reakcijas vidē. Ar krānu var regulēt ievadāmās vielas pieplūdi.","Izmanto reakciju veikšanai ar nelieliem reaģējošo vielu daudzumiem.","Izmanto šķīdumu (šķidrumu) pārliešanai, vielu pārbēršanai un filtrēšanai.","Lieto nelielu priekšmetu paņemšanai.","Izmanto šķīduma vides mērīšanai.","Izmanto vielu iztvaicēšanai (ietvaicēšanai), vielu sildīšanai, vārīšanai.","Izmanto kvantitatīvajā analīzē dažādu jonu koncentrācijas noteikšanai.","Izmanto šķīdumu pagatavošanai, vārīšanai, šķīdumu un vielu uzglabāšanai, ķīmisko iekārtu sastādīšanai.","Lieto nogulšņu mazgāšanai ar destilēto ūdeni vai kādu citu šķīdumu, nogulšņu noskalošanai no filtriem un trauku sienām. Tajās uzglabā arī nelielus destilēta ūdens daudzumus.","Sverglāzīte. Izmanto sausu higroskopisku vielu svēršanai.","Spirta lampiņa.","Izmanto trauku un vielu žāvēšanai.","Izmanto tilpumanalizei vielas koncentrācijas noteikšanai šķīdumā.","Lieto vielu karsēšanai. Laboratorijā sastopami porcelāna, dzelzs un korunda tīģeļi.","Izmanto karstu tīģeļu, sverglāzīšu pārnešanai.","Izmanto vielu uzkrāšanai (piemēram, sausā destilācija), gāzu atdzesēšanai. U veida caurules ar sānu novaduli vai novadulēm izmanto elektrolīzes iekārtu sastādīšanai.","Lieto šķīdumu pagatavošanai, šķīdumu sildīšanai, ķīmisko norišu pētīšanai.","Izmanto destilācijas procesa realizēšanai (kopā ar Lībiha dzesinātāju), gāzu iegūšanai un savākšanai."];
+            const names = ["Aizsargbrilles", ""] 
+        </script>
     </head>
     <body>
         <div class="container" style="text-align: center;">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="navbar">          
                     <div class="col">
                         <p><a href="file.html">#Home</a></p>
                     </div>
                 </div>
-            </div>
-            <h1> Laboratorijas trauki un piederumi </h1> <br>
+            </div> -->
+            </body>
+            <h1> Laboratorijas trauki un piederumi </h1> <br><br><br>
             <div class="row">
                 <div class="col-2">
                     <div class="row">
                         <div class="col-8">
-                            <img src="pictures/pic1.jpg" onclick="showPage('Aizsargbrille')">
+                            <img src="pictures/pic0.jpg" onclick="showPage(0)">
                         </div>
                         <div class="col-4">
                             <br>
@@ -31,7 +42,7 @@
                     </div>
                     <div class="row">
                         <div class="col-8">
-                            <img src="pictures/pic2.jpg" onclick="showPage('Apaļkolba')">
+                            <img src="pictures/pic1.jpg" onclick="showPage(1)">
                         </div>
                         <div class="col-4">
                             <p>Apaļkolba</p>
@@ -39,7 +50,7 @@
                     </div>
                     <div class="row">
                         <div class="col-8">
-                            <img src="pictures/pic3.jpg" onclick="showPage('Atdalāmā piltuve')">
+                            <img src="pictures/pic2.jpg" onclick="showPage(2)">
                         </div>
                         <div class="col-4">
                             <br><br>
@@ -48,7 +59,7 @@
                     </div>
                     <div class="row">
                         <div class="col-8">
-                            <img src="pictures/pic4.jpg" onclick="showPage('Bihnera piltuve')">
+                            <img src="pictures/pic3.jpg" onclick="showPage(3)">
                         </div>
                         <div class="col-4">
                             <p>Bihrena piltuve</p>
@@ -56,7 +67,7 @@
                     </div>
                     <div class="row">
                         <div class="col-8">
-                            <img src="pictures/pic5.jpg" onclick="showPage('Birete')"> 
+                            <img src="pictures/pic4.jpg" onclick="showPage(4)"> 
                         </div>
                         <div class="col-4">
                             <p>Birete</p>
@@ -64,7 +75,7 @@
                     </div>
                     <div class="row">
                         <div class="col-8">
-                            <img src="pictures/pic6.jpg" onclick="showPage('Bunzena kolba')"> 
+                            <img src="pictures/pic5.jpg" onclick="showPage(5)"> 
                         </div>
                         <div class="col-4">
                             <p>Bunzena kolba</p>
@@ -74,29 +85,21 @@
                 <div class="col-10">
                     <h3> Laboratorijas trauki un piederumi </h3> <br>
                     <div class="row">
-                        <div class="col-8">
-                            <p>bigman</p>
+                        <div class="col-10">
+                            <p id = "teksts">Aizsargbrilles</p>
                         </div>
-                        <div class="col-4">
-                            <p>bigman</p>
+                        <div class="col-2">
+                            <img src="pictures/pic0.jpg" id = "bilde">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <p>bigman</p>
-                            <p>bigman</p>
-                            <p>bigman</p>
+                            <p  id = "description">Aizsargbrilles lieto acu aizsargāšanai, veicot ķīmijas eksperimentus.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div> 
 
-        <script type="text/javascript">
-            function showPage(name, description) {
-                alert("Nosaukums: "+ name,"\n Apraksts: "+ description); 
-            }
-            const cars = ["Aizsargbrilles lieto acu aizsargāšanai, veicot ķīmijas eksperimentus.", " Izmanto šķidrumu un vārīšanai un karsēšanai, organisko un neorganisko sintēžu veikšanai, destilēšanai.", "Izmanto tādu šķidrumu atdalīšanai, kuri savstarpēji nesajaucas (piemēram, eļļa un ūdens)."];
-        </script>
     </body>
 </html>
