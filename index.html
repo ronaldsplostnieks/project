@@ -19,12 +19,25 @@
             const names = ["Aizsargbrilles", "Apaļkolba", "Atdalāmā piltuve", "Bihrena piltuve", "Birete", "Bunzena kolba", "Bunzena statīvs", "Destilācijas iekārta", "Eksikators", "Elektriskā plītiņa", "Elektrolīzes iekārta", "Erlenmeijera (koniskā) kolba", "Filtrēšanas iekārta", "Gazometrs", "Gāzu iegūšanasiekārta I", "Gāzu iegūšanas iekārta II", "Gāzu iegūšanas iekārta III", "Gāzu iegūšanas iekārta IV", "Gumijas uzgalis pipetes uzpildīšanai", "Hofmaņa aparāts", "Karotīte", "Kipa aparāts", "Kristalizators", "Lībiha dzesinātājs", "Mēģene", "Mēģeņu statīvs", "Mēģeņu turētājs", "Menzūra", "Mērcilindrs", "Mērkolba", "Mērpipete", "Mora pipete", "Piesta","Pilināmā piltuve", "Pilienu plate", "Piltuve", "Pincete", "pH-metrs", "Porcelāna bļodiņa", "Spektrofotometrs", "Stāvkolba", "Strūklene","Sverglāzīte", "Spirta lampiņa","Termostats","Titrēšanas iekārta", "Tīģelis","Tīģeļknaibles","U veida caurule","Vārglāze","Virca kolba"]
         </script>
     </head>
+    <!-- https://alvarotrigo.com/blog/prevent-scroll-on-scrollable-element-js/ -->
     <body>
         <div class="container" style="text-align: center;">
             <br>
             <h1> Laboratorijas trauki un piederumi </h1> <br><br><br>
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h5 id = "teksts">Aizsargbrilles</h5> <br>
+                            <p id = "description">Aizsargbrilles lieto acu aizsargāšanai, veicot ķīmijas eksperimentus.</p>
+                        </div>
+                        <div class="col-md-3" style="text-align:start">
+                            <img src="pictures/pic0.jpg" id = "bilde">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="scrollable">
                         <div class="row">
                             <div class="col-12">
                                 <img src="pictures/pic0.jpg" onclick="showPage(0)">
@@ -432,16 +445,6 @@
                             <div class="col-12">
                                 <p>Virca kolba</p>
                             </div>
-                        </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <h5 id = "teksts">Aizsargbrilles</h5> <br>
-                            <p id = "description">Aizsargbrilles lieto acu aizsargāšanai, veicot ķīmijas eksperimentus.</p>
-                        </div>
-                        <div class="col-md-3" style="text-align:start">
-                            <img src="pictures/pic0.jpg" id = "bilde">
                         </div>
                     </div>
                 </div>
